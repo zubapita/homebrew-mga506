@@ -104,7 +104,7 @@ class Mroonga < Formula
         file.read
       end
       data_index = file_content.index(/^__END__$/)
-      return super if data_index.nil?
+#      return super if data_index.nil?
 
       data = path.open
       data.seek(data_index + "__END__\n".size)
